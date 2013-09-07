@@ -16,6 +16,15 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+# Use haml for sexy markup
+gem 'haml-rails', '0.3.5'
+
+# Use for layout
+gem 'zurb-foundation', '~> 4.0.0'
+gem 'simple_form'
+gem 'select2-rails'
+gem 'font-awesome-rails'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
