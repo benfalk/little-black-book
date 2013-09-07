@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/rails-api/active_model_serializers.git
+  revision: 919bb3840107e8176a65d90c0af8ec1e02cef683
+  specs:
+    active_model_serializers (0.8.1)
+      activemodel (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,9 +67,6 @@ GEM
       railties (>= 3.1, < 4.1)
     hike (1.2.3)
     i18n (0.6.5)
-    jbuilder (1.5.1)
-      activesupport (>= 3.0.0)
-      multi_json (>= 1.2.0)
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
@@ -149,12 +153,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers!
   coffee-rails (~> 4.0.0)
   devise
   factory_girl_rails
   font-awesome-rails
   haml-rails (= 0.3.5)
-  jbuilder (~> 1.2)
   jquery-rails
   rails (~> 4.0.0)
   rspec-rails (~> 2.0)
