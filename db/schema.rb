@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130908035646) do
+ActiveRecord::Schema.define(version: 20130908180700) do
 
   create_table "addresses", force: true do |t|
     t.string   "addressable_type"
@@ -36,6 +36,15 @@ ActiveRecord::Schema.define(version: 20130908035646) do
     t.string   "company"
     t.string   "department"
     t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "emails", force: true do |t|
+    t.string   "emailable_type"
+    t.string   "emailable_id"
+    t.string   "type"
+    t.string   "address"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

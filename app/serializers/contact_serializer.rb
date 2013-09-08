@@ -9,4 +9,9 @@ class ContactSerializer < ActiveModel::Serializer
              :title,
              :created_at,
              :updated_at
+
+  has_many :emails
+
+  embed :id, :include => true
+
 end

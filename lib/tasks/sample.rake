@@ -10,7 +10,8 @@ begin
                         title: Faker::Name.title,
                         company: Faker::Company.name,
                         department: Faker::Commerce.department,
-                        nick_name: ''
+                        nick_name: '',
+			emails: [Email.new(address: Faker::Internet.email)] 
       end
     end
 
