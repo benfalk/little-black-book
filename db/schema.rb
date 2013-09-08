@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130907230244) do
+ActiveRecord::Schema.define(version: 20130908035646) do
 
   create_table "addresses", force: true do |t|
     t.string   "addressable_type"
@@ -25,6 +25,17 @@ ActiveRecord::Schema.define(version: 20130907230244) do
     t.string   "time_zone"
     t.float    "latitude"
     t.float    "longitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "contacts", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "nick_name"
+    t.string   "company"
+    t.string   "department"
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
