@@ -11,6 +11,7 @@ class ContactSerializer < ActiveModel::Serializer
              :updated_at
 
   has_many :emails
+  has_many :phone_numbers
 
   embed :id, :include => true
 

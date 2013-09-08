@@ -11,7 +11,8 @@ begin
                         company: Faker::Company.name,
                         department: Faker::Commerce.department,
                         nick_name: '',
-			emails: [Email.new(address: Faker::Internet.email)] 
+			emails: [Email.new(address: Faker::Internet.email)],
+                        phone_numbers: [PhoneNumber.from_string(Faker::PhoneNumber.phone_number)]
       end
     end
 
