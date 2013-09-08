@@ -37,8 +37,10 @@ gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 # gem 'jbuilder', '~> 1.2'
 
 group :development, :test do
+  gem 'cucumber-rails', :require => false
   gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 2.0'
+  gem 'database_cleaner'
 end
 
 group :doc do
