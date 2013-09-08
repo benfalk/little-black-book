@@ -1,28 +1,21 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ This is a rails web service application that provides contact
+ information. It is meant to connect to different data sources
+ to aggregate that information into a single area.
 
-Things you may want to cover:
+== REQUIREMENTS
 
-* Ruby version
+ * Ruby >= 2.0
+ * Rails >= 4.0
 
-* System dependencies
+== DEVELOPMENT INFORMATION
 
-* Configuration
+ You can seed 10 sample contacts in the database with the following rake comand:
 
-* Database creation
+	rake sample:contacts
 
-* Database initialization
+ The test suite can be run with the following rake command:
 
-* How to run the test suite
+	rake rspec
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
