@@ -1,21 +1,21 @@
 == README
 
- This is a rails web service application that provides contact
- information. It is meant to connect to different data sources
- to aggregate that information into a single area.
+This is a rails web service application that provides contact
+information. It is meant to connect to different data sources
+to aggregate that information into a single area.
 
 == REQUIREMENTS
 
- * Ruby >= 2.0
- * Rails >= 4.0
+* Ruby >= 2.0
+* Rails >= 4.0
 
 == DEVELOPMENT INFORMATION
 
- You can seed 10 sample contacts in the database with the following rake comand:
+You can seed 10 sample contacts in the database with the following rake comand:
 
-	rake sample:contacts
+  rake sample:contacts
 
- The test suite can be run with the following rake command:
+The test suite can be run with the following rake command:
 
-	rake rspec
+  rake rspec
 
