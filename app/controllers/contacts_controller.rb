@@ -4,7 +4,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts(.json)
   def index
-    @contacts = Contact.includes(:emails, :phone_numbers).all
+    @contacts = Contact.includes(:emails, :phone_numbers, :address).to_a
     respond_with @contacts
   end
 

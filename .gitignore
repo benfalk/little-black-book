@@ -6,6 +6,10 @@
 
 # No more swap files pleas
 *.swp
+*.swo
+
+# Ignore the generated docs
+/doc
 
 # Ignore bundler config.
 /.bundle
