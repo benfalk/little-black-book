@@ -13,6 +13,8 @@ class ContactSerializer < ActiveModel::Serializer
   has_many :emails
   has_many :phone_numbers
 
+  has_one :address
+
   embed :id, :include => true
 
 end

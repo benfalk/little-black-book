@@ -12,7 +12,15 @@ begin
                         department: Faker::Commerce.department,
                         nick_name: '',
 			emails: [Email.new(address: Faker::Internet.email)],
-                        phone_numbers: [PhoneNumber.from_string(Faker::PhoneNumber.phone_number)]
+                        phone_numbers: [PhoneNumber.from_string(Faker::PhoneNumber.phone_number)],
+                        address: Address.new( street: Faker::Address.street_address,
+                                              street2: '',
+                                              city: Faker::Address.city,
+                                              state: Faker::Address.state,
+                                              zip: Faker::Address.zip,
+                                              time_zone: Faker::Address.time_zone,
+                                              latitude: Faker::Address.latitude,
+                                              longitude: Faker::Address.longitude )
       end
     end
 

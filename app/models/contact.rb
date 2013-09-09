@@ -4,4 +4,6 @@ class Contact < ActiveRecord::Base
 
   has_many :phone_numbers, :as => :callable
 
+  has_one :address, :as => :addressable
+
 end
